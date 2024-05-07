@@ -13,9 +13,10 @@ namespace ExemplosExplorando.Models
             {
 
             Metodo2();
-            }catch(Exception)
+            }catch(Exception ex)
             {
-                Console.WriteLine("Exceção tratada.")
+                Console.WriteLine("Exceção tratada.");
+                Console.WriteLine($"Exceção tratada {ex.StackTrace}");
             }
         }
         public void Metodo2()
