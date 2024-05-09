@@ -1,23 +1,49 @@
 ﻿using ExemplosExplorando.Models;
 // using ExemplosExplorando.Models.Pessoa;
 
-//aqui eu chamo o construtor 
-Pessoa p1 = new Pessoa("Leonardo", "buta");
-//aqui eu to usando o desconstruct
-(string nome, string sobrenome) = p1;
+int numero = 10;
+bool ehPar = false;
 
-Console.WriteLine( $"{nome} {sobrenome}");
+//if ternario 
 
+ehPar = numero % 2 == 0;
 
-
-
+Console.WriteLine($"o numero {numero} é -"+ (ehPar ? "par": "impar"));
 
 
+// if (numero % 2 == 0)
+// {
+//     Console.WriteLine($"O numero {numero} é par");
+// }
+// else
+// {
+//     Console.WriteLine($"O numero {numero} é impar");
+// }
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// //aqui eu chamo o construtor 
+// Pessoa p1 = new Pessoa("Leonardo", "buta");
+// //aqui eu to usando o desconstruct
+// (string nome, string sobrenome) = p1;
+
+// Console.WriteLine( $"{nome} {sobrenome}");
 // LeituraArquivo arquivo = new LeituraArquivo();
 
 // //usando var nao preciso passar o tipo de dados para as variaveis
