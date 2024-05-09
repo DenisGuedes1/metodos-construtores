@@ -13,6 +13,13 @@ namespace ExemplosExplorando.Models
             Sobrenome = sobrenome;
             
         }
+        //desconstrutor nele estamos fazendo o modo inverso
+        //
+        public void Deconstruct (out string nome, out string sobrenome)
+        {
+            nome = Nome;
+            sobrenome = Sobrenome;
+        }
         public Pessoa()        
         {
 

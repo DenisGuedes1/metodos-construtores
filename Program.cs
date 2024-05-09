@@ -1,10 +1,45 @@
 ﻿using ExemplosExplorando.Models;
+// using ExemplosExplorando.Models.Pessoa;
 
-LeituraArquivo arquivo = new LeituraArquivo();
+//aqui eu chamo o construtor 
+Pessoa p1 = new Pessoa("Leonardo", "buta");
+//aqui eu to usando o desconstruct
+(string nome, string sobrenome) = p1;
 
-//usando var nao preciso passar o tipo de dados para as variaveis
-var(sucesso,linhaArquivo, quantidadeLinhas) = arquivo.LerArquivo("Arquivo/ArquivoLeitura.txt");
+Console.WriteLine( $"{nome} {sobrenome}");
 
+
+
+
+
+
+
+
+
+
+
+// LeituraArquivo arquivo = new LeituraArquivo();
+
+// //usando var nao preciso passar o tipo de dados para as variaveis
+// var(sucesso,linhaArquivo, quantidadeLinhas) = arquivo.LerArquivo("Arquivo/ArquivoLeitura.txt");
+// // quando tiver algum retorno em tupla em que eu nao desejar retornar
+// // eu posso usar o _ no lugar do nome da variavel como no ex abaixo.
+// // a onde eu nao quero retornar a quantidade de linhas.
+// // var(sucesso,linhaArquivo, _) = arquivo.LerArquivo("Arquivo/ArquivoLeitura.txt");
+
+// if(sucesso)
+// {
+//     Console.WriteLine("Quantidade linhas arquivo" + quantidadeLinhas);
+//     foreach (string linha in linhaArquivo)
+//     {
+//         Console.WriteLine(linha);        
+//     }
+
+// }
+// else
+// {
+//     Console.WriteLine("Nãop foi possivel ler o arquivo");
+// }
 
 
 

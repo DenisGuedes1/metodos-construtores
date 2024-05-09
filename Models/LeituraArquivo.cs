@@ -19,7 +19,7 @@ namespace ExemplosExplorando.Models
             }
             catch(Exception)
             {
-                return (false,new string[], 0);   
+                return (false,new string[] { } , 0);   
             }
             
 
