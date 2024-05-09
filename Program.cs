@@ -1,91 +1,159 @@
 ﻿using ExemplosExplorando.Models;
 
+LeituraArquivo arquivo = new LeituraArquivo();
+
+//usando var nao preciso passar o tipo de dados para as variaveis
+var(sucesso,linhaArquivo, quantidadeLinhas) = arquivo.LerArquivo("Arquivo/ArquivoLeitura.txt");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// (int id, string nome,string sobrenome, decimal altura) tupla = (1,"Fernando", "Buta", 1.75M);
+
+// //outra sintaxe tupla nesses exemplos nao consigo renomear meus itens
+// ValueTuple<int,string,string,decimal> outroExemploTupla = (1,"FErnando", "Buta", 1.75m);
+// //nesse terceiro exemplo nao precisa passar os tipos de dados. 
+// var outroExemploTuplaCreate = Tuple.Create(1,"Fernando", "Buta", 1.75M);
+
+// Console.WriteLine($"Id: {tupla.id}");
+// Console.WriteLine($"Nome: {tupla.nome}");
+// Console.WriteLine($"Sobrenome: {tupla.sobrenome}");
+// Console.WriteLine($"Altura: {tupla.altura}");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //trabalhando com dicionario
 
-Dictionary<string, string> estados = new Dictionary<string, string>();
+// Dictionary<string, string> estados = new Dictionary<string, string>();
 
-estados.Add("SP", "São Paulo");
-estados.Add("BA", "Bahia");
-estados.Add("MG", "Minas Gerais");
+// estados.Add("SP", "São Paulo");
+// estados.Add("BA", "Bahia");
+// estados.Add("MG", "Minas Gerais");
 
-foreach (var item in estados)
-{
-    Console.WriteLine($"Chave: {item.Key}, valor: {item.Value}");
-}
+// foreach (var item in estados)
+// {
+//     Console.WriteLine($"Chave: {item.Key}, valor: {item.Value}");
+// }
 
-Console.WriteLine("----------------");
-//remove
-// estados.Remove("BA");
-//altera
-estados["SP"] = "São Paulo - Valor alterado";
-foreach (var item in estados)
-{
-    Console.WriteLine($"Chave: {item.Key}, valor: {item.Value}");
-}
+// Console.WriteLine("----------------");
+// //remove
+// // estados.Remove("BA");
+// //altera
+// estados["SP"] = "São Paulo - Valor alterado";
+// foreach (var item in estados)
+// {
+//     Console.WriteLine($"Chave: {item.Key}, valor: {item.Value}");
+// }
 
-//obtendo valor existente
+// //obtendo valor existente
 
-Console.Writeline(estados["MG"]);
+// Console.Writeline(estados["MG"]);
 
-string chave = "BA";
+// string chave = "BA";
 
-Console.WriteLine($"Verificando elementos: {chave}")
-if (estados.ContainsKey(chave))
-{
-    Console.WriteLine($"valor existente: {chave}")
-}
-else
-{
-    Console.WriteLine($"É seguro adicionar a {chave}")
-}
-//trabalhando com pilha
+// Console.WriteLine($"Verificando elementos: {chave}")
+// if (estados.ContainsKey(chave))
+// {
+//     Console.WriteLine($"valor existente: {chave}")
+// }
+// else
+// {
+//     Console.WriteLine($"É seguro adicionar a {chave}")
+// }
+// //trabalhando com pilha
 
-Stack<int> pilha = new Stack<int>();
+// Stack<int> pilha = new Stack<int>();
 
-pilha.Push(4);
-pilha.Push(6);
-pilha.Push(8);
-pilha.Push(10);
+// pilha.Push(4);
+// pilha.Push(6);
+// pilha.Push(8);
+// pilha.Push(10);
 
-foreach (int item in pilha)
-{
-    Console.WriteLine(item);
-}
-Console.WriteLine($"Removendo o elemento do topo: {pilha.Pop()}");
+// foreach (int item in pilha)
+// {
+//     Console.WriteLine(item);
+// }
+// Console.WriteLine($"Removendo o elemento do topo: {pilha.Pop()}");
 
-pilha.Push(20);
+// pilha.Push(20);
 
-foreach (int item in pilha)
-{
-    Console.WriteLine(item);
-}
-
-
+// foreach (int item in pilha)
+// {
+//     Console.WriteLine(item);
+// }
 
 
 
-// trabalhando com filas
-
-Queue<int> fila = new Queue<int>();
-
-fila.Enqueue(2);
-fila.Enqueue(4);
-fila.Enqueue(6);
-fila.Enqueue(8);
 
 
-foreach (int item in fila)
-{
-    Console.WriteLine(item);
-}
-//remover elemento da fila, 
-//ele sempre vai remover o primeiro elemento
-Console.WriteLine($"Removendo o elemento: {fila.Dequeue()}");
+// // trabalhando com filas
 
-foreach (int item in fila)
-{
-    Console.WriteLine(item);
-}
+// Queue<int> fila = new Queue<int>();
+
+// fila.Enqueue(2);
+// fila.Enqueue(4);
+// fila.Enqueue(6);
+// fila.Enqueue(8);
+
+
+// foreach (int item in fila)
+// {
+//     Console.WriteLine(item);
+// }
+// //remover elemento da fila, 
+// //ele sempre vai remover o primeiro elemento
+// Console.WriteLine($"Removendo o elemento: {fila.Dequeue()}");
+
+// foreach (int item in fila)
+// {
+//     Console.WriteLine(item);
+// }
 
 
 
