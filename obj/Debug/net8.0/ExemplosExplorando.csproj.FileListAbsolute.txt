@@ -13,3 +13,6 @@ C:\Users\denif\Desktop\ExemplosExplorando\obj\Debug\net8.0\ExemplosExplorando.pd
 C:\Users\denif\Desktop\ExemplosExplorando\obj\Debug\net8.0\ExemplosExplorando.genruntimeconfig.cache
 C:\Users\denif\Desktop\ExemplosExplorando\obj\Debug\net8.0\ref\ExemplosExplorando.dll
 C:\Users\denif\Desktop\ExemplosExplorando\obj\Debug\net8.0\ExemplosExplorando.sourcelink.json
+C:\Users\denif\Desktop\ExemplosExplorando\obj\Debug\net8.0\ExemplosExplorando.csproj.AssemblyReference.cache
+C:\Users\denif\Desktop\ExemplosExplorando\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\denif\Desktop\ExemplosExplorando\obj\Debug\net8.0\Exemplos.2A93A154.Up2Date

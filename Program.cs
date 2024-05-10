@@ -1,14 +1,68 @@
 ﻿using ExemplosExplorando.Models;
-// using ExemplosExplorando.Models.Pessoa;
+using Newtonsoft.Json;
+// using ExemplosExplorando.Models.Venda;
 
-int numero = 10;
-bool ehPar = false;
+//problema, eu preciso criar um arquivo json e mandar pro meu
+//cliente os dados de um determinado produto
+//estanciando as vendas;
+//serializando coleção de objeto
+DateTime dataAtual = DateTime.Now;
+List<Venda> listaVendas = new List<Venda>();
+Venda v1 = new Venda (1,"Material de escritorio", 25.00M, dataAtual);
+Venda v2 = new Venda (2,"Licença Software", 110.00M, dataAtual);
+listaVendas.Add(v1);
+listaVendas.Add(v2);
+//serializando os dados
+string serializado = JsonConvert.SerializeObject(listaVendas, Formatting.Indented);
+//criando arquivo json com o objeto serializado
+File.WriteAllText("Arquivo/vendas.json",serializado);
+//objeto serializado
+Console.WriteLine(serializado);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// using ExemplosExplorando.Models.Pessoa;
+//pra instalar um pacote usa o seguinte comando
+// dotnet add package nome do pacote
+//int numero = 10;
+//bool ehPar = false;
 
 //if ternario 
 
-ehPar = numero % 2 == 0;
+//ehPar = numero % 2 == 0;
 
-Console.WriteLine($"o numero {numero} é -"+ (ehPar ? "par": "impar"));
+//Console.WriteLine($"o numero {numero} é -"+ (ehPar ? "par": "impar"));
 
 
 // if (numero % 2 == 0)
@@ -19,25 +73,6 @@ Console.WriteLine($"o numero {numero} é -"+ (ehPar ? "par": "impar"));
 // {
 //     Console.WriteLine($"O numero {numero} é impar");
 // }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // //aqui eu chamo o construtor 
 // Pessoa p1 = new Pessoa("Leonardo", "buta");
 // //aqui eu to usando o desconstruct
